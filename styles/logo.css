@@ -1,0 +1,29 @@
+.logo {
+  display:       flex;
+  align-items:   flex-start;
+  gap:           6.5px;
+  margin-bottom: var(--space-15);
+}
+
+.logo__icons {
+  display:     flex;
+  align-items: center;
+  gap:         2px;
+  flex-shrink: 0;
+  align-self:  flex-start;
+  padding-top: 2px;
+}
+
+.logo__icons img {
+  width:  22px;
+  height: 31px;
+}
+
+.logo__label {
+  font-family:    var(--font-body);
+  font-weight:    700;
+  font-size:      16px;
+  line-height:    1.2;
+  text-transform: uppercase;
+  color:          #595653;
+}
