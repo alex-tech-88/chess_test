@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,13 +11,12 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- HERO / ПЕРВЫЙ ЭКРАН -->
+  <!-- HERO -->
   <section class="hero" id="hero">
 
-    <!-- Правая часть: коллаж -->
+    <!-- Right side: collage (placeholder) -->
     <div class="hero__collage" aria-hidden="true">
       <!--
         <img src="assets/hero-collage.png"
@@ -26,10 +24,10 @@
       -->
     </div>
 
-    <!-- Левая часть -->
+    <!-- Left side -->
     <div class="hero__content">
 
-      <!-- Логотип -->
+      <!-- Logo -->
       <a href="#" class="logo" aria-label="Клуб четырёх коней">
         <div class="logo__icons" aria-hidden="true">
           <img src="assets/horse_icon.svg" width="22" height="31" alt="">
@@ -40,10 +38,10 @@
         <span class="logo__label">Клуб<br>четырёх коней</span>
       </a>
 
-      <!-- Текстовый блок 542×444 -->
+      <!-- Text block 542×444 -->
       <div class="hero__text-block">
 
-        <!-- Заголовок -->
+        <!-- Heading -->
         <h1 class="hero__title">
           Превратите<br>
           уездный город<br>
@@ -51,41 +49,39 @@
           <span class="hero__title--wide">земного шара</span>
         </h1>
 
-        <!-- Описание -->
+        <!-- Description -->
         <p class="hero__desc">
           Оплатите взнос на&nbsp;телеграммы для&nbsp;организации
           Международного васюкинского турнира по&nbsp;шахматам
         </p>
 
-        <!-- Кнопки-якоря -->
+        <!-- CTA buttons -->
         <div class="hero__btns">
-          <a href="#register" class="btn btn--dark">
+          <a href="#register" class="btn btn--dark" aria-label="Поддержать шахматную мысль">
             Поддержать<br>шахматную мысль
           </a>
-          <a href="#about" class="btn btn--outline">
+          <a href="#about" class="btn btn--outline" aria-label="Подробнее о турнире">
             Подробнее<br>о&nbsp;турнире
           </a>
         </div>
 
       </div>
-
     </div>
 
   </section>
 
-  <!-- БЕГУЩАЯ СТРОКА -->
+  <!-- TICKER -->
   <div class="ticker" aria-label="Бегущая строка">
     <div class="ticker__track">
-      <span class="ticker__item">Дело помощи утопающим — дело рук самих утопающих!<span class="ticker__dot"></span></span>
-      <span class="ticker__item">Шахматы двигают вперёд не только культуру, но и экономику!<span class="ticker__dot"></span></span>
-      <span class="ticker__item">Лёд тронулся, господа присяжные заседатели!<span class="ticker__dot"></span></span>
-      <span class="ticker__item">Дело помощи утопающим — дело рук самих утопающих!<span class="ticker__dot"></span></span>
-      <span class="ticker__item">Шахматы двигают вперёд не только культуру, но и экономику!<span class="ticker__dot"></span></span>
-      <span class="ticker__item">Лёд тронулся, господа присяжные заседатели!<span class="ticker__dot"></span></span>
+      <span class="ticker__item">Дело помощи утопающим — дело рук самих утопающих!<span class="ticker__dot" aria-hidden="true"></span></span>
+      <span class="ticker__item">Шахматы двигают вперёд не только культуру, но и экономику!<span class="ticker__dot" aria-hidden="true"></span></span>
+      <span class="ticker__item">Лёд тронулся, господа присяжные заседатели!<span class="ticker__dot" aria-hidden="true"></span></span>
+      <span class="ticker__item">Дело помощи утопающим — дело рук самих утопающих!<span class="ticker__dot" aria-hidden="true"></span></span>
+      <span class="ticker__item">Шахматы двигают вперёд не только культуру, но и экономику!<span class="ticker__dot" aria-hidden="true"></span></span>
+      <span class="ticker__item">Лёд тронулся, господа присяжные заседатели!<span class="ticker__dot" aria-hidden="true"></span></span>
     </div>
   </div>
 
   <script src="main.js"></script>
 </body>
-
 </html>
