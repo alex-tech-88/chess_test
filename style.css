@@ -1,0 +1,171 @@
+/* ── TOKENS ── */
+:root {
+  --color-bg:     #e9ddd4;
+  --color-dark:   #313131;
+  --color-red:    #f54932;
+  --color-yellow: #fbce51;
+  --color-brown:  #595450;
+  --color-white:  #ffffff;
+
+  --font-family:   "Golos Text", sans-serif;
+  --second-family: "Merriweather", sans-serif;
+  --third-family:  "Montserrat", sans-serif;
+}
+
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-family);
+  color: var(--color-dark);
+  overflow-x: hidden;
+}
+
+/* ── HERO ── */
+.hero {
+  background-color: var(--color-bg);
+  background-image: url('assets/hero_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: color-burn;
+  min-height: 700px;
+  position: relative;
+  padding-top: 26px;
+  padding-left: 349px;
+  padding-right: 40px;
+  padding-bottom: 60px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__text-block {
+  width: 542px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero__title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  text-align: left;
+  width: 100%;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.hero__title--right {
+  display: block;
+  text-align: right;
+  width: 100%;
+  padding-right: 91px;
+}
+
+.hero__title--wide {
+  display: block;
+  text-align: right;
+  width: 100%;
+  font-size: 60px;
+  line-height: 1.05;
+}
+
+.hero__desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--color-dark);
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* ── LOGO ── */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6.5px;
+  text-decoration: none;
+  width: 245px;
+  height: 36px;
+  margin-bottom: 62px;
+}
+
+.logo__icons {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.logo__icons img {
+  display: block;
+  width: 22px;
+  height: 31px;
+}
+
+.logo__label {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.08;
+  text-transform: uppercase;
+  color: #595653;
+}
+
+/* ── BUTTONS ── */
+.hero__btns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 542px;
+  height: 72px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 263px;
+  height: 72px;
+  padding: 20px;
+  border-radius: 66px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.btn--dark {
+  background: #1f1f1f;
+  color: #ffffff;
+}
+
+.btn--dark:hover {
+  background: var(--color-yellow);
+  color: #1f1f1f;
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-dark);
+  border: 2px solid var(--color-dark);
+}
+
+.btn--outline:hover {
+  background: #1f1f1f;
+  color: #ffffff;
+  border-color: #1f1f1f;
+}
