@@ -71,3 +71,19 @@
   width:       var(--text-block-width);
   height:      var(--btn-height);
 }
+
+.hero__circle {
+  position:       absolute;
+  top:            0;
+  left:           calc(var(--hero-padding-left) + var(--text-block-width) + 60.5px);
+  width:          660px;
+  pointer-events: none;
+  z-index:        0;
+}
+
+.hero__circle svg {
+  width:   100%;
+  height:  auto;
+  display: block;
+}
+
